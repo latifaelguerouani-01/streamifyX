@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>streamifyX</title>
-
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-
-
+    <title>StreamifyX</title>
+    <link rel="icon" href="img/icon.png" type="image/icon type">
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 
@@ -18,21 +20,34 @@
 <body>
 
 
-    <header>
-        <a href="#" class="logo"><i class="fas fa-infinity"></i>streamifyX</a>
-        <nav class="navbar">
-             <a href="index.html">home</a>
-             <a href="#anime">anime</a>
-             <a href="#action">action</a>
-             <a href="#child">comedy</a>
-             <a href="#family">horror</a>
+
+
+     <header>
+        <input type ="checkbox" name ="" id ="chk1">
+        <div class="logo"><img src="img\icon.png" alt="logo" title="logo" with="50"  height="40"><spam top-padding="0" top-margin="0">  StreamifyX</spam></div>
+        <div class="search-box">
+                <form>
+                    <input type ="text" name ="search" id ="srch" placeholder="Search">
+                    <button type ="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </div> 
+            <nav class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#anime">Anime</a></li>
+                <li><a href="#action">Action</a></li>
+                <li><a href="#child">Comedy</a></li>
+                <li><a href="#family">Horror</a></li>
+               
+                <a href="login.html"><input type="button" id="btn" value="Sign in" padding="0" margin="0"></a> 
+            
         </nav>
-        <div class="icons">
-            <i class="fas fa-bars" id="menu-bars"></i>
-            <i class="fas fa-search" id="search-icon"></i>
-            <a href="#" class="fas fa-heart"></a>
-        </div>
-    </header>
+            <div  class="menu" id="menu-bars">
+                <label for="chk1">
+                    <i class="fa fa-bars"></i>
+                </label>
+            </div>
+    </header> 
 
 
 
@@ -45,11 +60,12 @@
             <div class="swiper-slide">
                 <div class="box " style="background: url(img/oppenheimer.jpg) no-repeat;">
                     <div class="content">
-                        <h3>The conjuring</h3>
-                        <p>High roller Yumeko Jabami plans to clean house at Hyakkaou Private<br>
-                        Academy, a school where students are evaluated solely on their<br>
-                        gambling skills.</p>
-                        <a href="download.html" class="btn">Download</a>
+                        <h3>Oppenheimer</h3>
+                        <p>The film tells the story of J. Robert Oppenheimer,<br>
+                            the physicist who led the Manhattan Project during World War II,<br>
+                            the secret program that developed the first atomic bomb.
+                        </p>
+                        <a href="download.html" class="btn"><i class="bi bi-play-circle-fill"></i><pre> </pre><spam>Watch</spam></a>
                     </div>
                 </div>
             </div>
@@ -61,7 +77,7 @@
                          <p>When a Japanese high schooler comes into possession of a mystical<br>
                         notebook, he finds he has the power to kill anybody whose name he<br>
                         enters in it.</p>
-                        <a href="download.html" class="btn">Download</a>
+                        <a href="download.html" class="btn"><i class="bi bi-play-circle-fill"></i><pre> </pre><spam>Watch</spam></a>
                     </div>
                 </div>
             </div>
@@ -69,11 +85,13 @@
             <div class="swiper-slide">
                 <div class="box " style="background: url(img/interstellar-main.jpg) no-repeat;">
                     <div class="content">
-                        <h3>One-Punch Man</h3>
-                         <p>The most powerful superhero in the world can kill anyone with one<br>
-                        blow. But nothing can challenge him, so he struggles with ennui and<br>
-                        depression</p>
-                        <a href="download.html" class="btn">Download</a>
+                        <h3>Interstellar</h3>
+                         <p>The story follows Cooper, <br>
+                             a former pilot who joins a space mission to find a new planet where humans can survive.<br>
+                             Traveling through a wormhole near Saturn,<br>
+                             the team explores distant planets while facing extreme conditions, <br>
+                             time distortion, and emotional sacrifices.</p>
+                        <a href="download.html" class="btn"><i class="bi bi-play-circle-fill"></i><pre> </pre><spam>Watch</spam></a>
                     </div>
                 </div>
             </div>
@@ -84,7 +102,7 @@
                         <h3>Naruto</h3>
                         <p>Guided by the spirit demon within him, orphaned Naruto learns<br>
                         to harness his powers as a ninja in this anime adventure series.</p>
-                        <a href="download.html" class="btn">Download</a>
+                        <a href="download.html" class="btn"><i class="bi bi-play-circle-fill"></i><pre> </pre><spam>Watch</spam></a>
                     </div>
                 </div>
             </div>
@@ -96,132 +114,81 @@
 </section>
 
 
-
 <section class="anime" id="anime">
     <h1 class="heading">Popular on Anime</h1>
     <div class="swiper anime-slider">
         <div class="swiper-wrapper">
 
             <div class="swiper-slide">
-                <div class="box" style="background: url(img/anime-img-1.jpg) no-repeat;"></div>
+                <div class="box" style="background: url(img/narutof.png) no-repeat;"></div>
                 <div class="content">
                     <h3>Naruto</h3>
+                    <div class="para">
                     <p>Guided by the spirit demon within him, orphaned Naruto learns
-                    to harness his powers as a ninja in this anime adventure series.</p>
-                    <a href="download.html" class="btn">Download</a>
+                    to harness his powers as a ninja in this anime adventure series.</p></div>
+                    <a href="download.html" class="btn"><i class="bi bi-play-circle-fill"></i><pre> </pre><spam>Watch</spam></a>
                 </div>
             </div>
 
             <div class="swiper-slide">
-                <div class="box" style="background: url(img/anime-img-2.jpg) no-repeat;"></div>
+                <div class="box" style="background: url(img/onepunch.png) no-repeat;"></div>
                 <div class="content">
                     <h3>One-Punch Man</h3>
-                    <p>Guided by the spirit demon within him, orphaned Naruto learns
-                    to harness his powers as a ninja in this anime adventure series.</p>
-                    <a href="download.html" class="btn">Download</a>
+                    <div class="para">
+                    <p>A comically overpowered superhero faces ennui as he effortlessly defeats foes with a single punch, seeking excitement and meaning in a world full of challenges.</p></div>
+                        <a href="download.html" class="btn"><i class="bi bi-play-circle-fill"></i><pre> </pre><spam>Watch</spam></a>
                 </div>
             </div>
 
             <div class="swiper-slide">
-                <div class="box" style="background: url(img/anime-img-3.jpg) no-repeat;"></div>
+                <div class="box" style="background: url(img/Deathnote.png) no-repeat;"></div>
                 <div class="content">
                     <h3>DEATH NOTE</h3>
-                    <p>Guided by the spirit demon within him, orphaned Naruto learns
-                    to harness his powers as a ninja in this anime adventure series.</p>
-                    <a href="download.html" class="btn">Download</a>
+                    <div class="para">
+                    <p>A high school student gains the power to kill anyone whose name he writes in a supernatural notebook, setting off a deadly game of cat and mouse with a brilliant detective.</p></div>
+                    <a href="download.html" class="btn"><i class="bi bi-play-circle-fill"></i><pre> </pre><spam>Watch</spam></a>
                 </div>
             </div>
 
             <div class="swiper-slide">
-                <div class="box" style="background: url(img/anime-img-4.jpg) no-repeat;"></div>
+                <div class="box" style="background: url(img/black.png) no-repeat;"></div>
                 <div class="content">
                     <h3>Black Clover</h3>
-                    <p>Guided by the spirit demon within him, orphaned Naruto learns
-                    to harness his powers as a ninja in this anime adventure series.</p>
-                    <a href="download.html" class="btn">Download</a>
+                    <div class="para">
+                    <p>In a world where magic is everything, a young boy born without magical abilities dreams of becoming the Wizard King, defying all odds with his determination and perseverance.</p></div>
+                    <a href="download.html" class="btn"><i class="bi bi-play-circle-fill"></i><pre> </pre><spam>Watch</spam></a>
                 </div>
             </div>
 
             <div class="swiper-slide">
-                <div class="box" style="background: url(img/anime-img-5.jpg) no-repeat;"></div>
+                <div class="box" style="background: url(img/jojo.png) no-repeat;"></div>
                 <div class="content">
                     <h3>Jujutsu Kaisen</h3>
-                    <p>Guided by the spirit demon within him, orphaned Naruto learns
-                    to harness his powers as a ninja in this anime adventure series.</p>
-                    <a href="download.html" class="btn">Download</a>
+                    <div class="para">
+                    <p>A high school student becomes involved in the world of curses and sorcery after ingesting a cursed object, leading him to enroll in a school for sorcerers to battle evil spirits.</p></div>
+                    <a href="download.html" class="btn"><i class="bi bi-play-circle-fill"></i><pre> </pre><spam>Watch</spam></a>
                 </div>
             </div>
 
             <div class="swiper-slide">
-                <div class="box" style="background: url(img/anime-img-6.jpg) no-repeat;"></div>
+                <div class="box" style="background: url(img/hyko.png) no-repeat;"></div>
                 <div class="content">
-                    <h3>Haikyu!!</h3>
-                    <p>Guided by the spirit demon within him, orphaned Naruto learns
-                    to harness his powers as a ninja in this anime adventure series.</p>
-                    <a href="download.html" class="btn">Download</a>
+                    <h3>Haikyu</h3>
+                    <div class="para">
+                    <p>A passionate volleyball player joins his high school's struggling team, aiming to reach the national championships while overcoming personal and team challenges.</p></div>
+                    <a href="download.html" class="btn"><i class="bi bi-play-circle-fill"></i><pre> </pre><spam>Watch</spam></a>
                 </div>
             </div>
 
             <div class="swiper-slide">
-                <div class="box" style="background: url(img/anime-img-7.jpg) no-repeat;"></div>
+                <div class="box" style="background: url(img/basket.png) no-repeat;"></div>
                 <div class="content">
-                    <h3>Kuroko's Basketball</h3>
-                    <p>Guided by the spirit demon within him, orphaned Naruto learns
-                    to harness his powers as a ninja in this anime adventure series.</p>
-                    <a href="download.html" class="btn">Download</a>
+                    <h3>Kuroko</h3>
+                    <div class="para">
+                    <p>In a story of teamwork and rivalry, a high school basketball team strives for greatness with the help of a mysterious and skilled player known as the 'Phantom Sixth Man.</p></div>
+                    <a href="download.html" class="btn"><i class="bi bi-play-circle-fill"></i><pre> </pre><spam>Watch</spam></a>
                 </div>
             </div>
-
-            <div class="swiper-slide">
-                <div class="box" style="background: url(img/anime-img-8.jpg) no-repeat;"></div>
-                <div class="content">
-                    <h3>My Hero Academia</h3>
-                    <p>Guided by the spirit demon within him, orphaned Naruto learns
-                    to harness his powers as a ninja in this anime adventure series.</p>
-                    <a href="download.html" class="btn">Download</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="box" style="background: url(img/anime-img-9.jpg) no-repeat;"></div>
-                <div class="content">
-                    <h3>Dr. Stone</h3>
-                    <p>Guided by the spirit demon within him, orphaned Naruto learns
-                    to harness his powers as a ninja in this anime adventure series.</p>
-                    <a href="download.html" class="btn">Download</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="box" style="background: url(img/anime-img-10.jpg) no-repeat;"></div>
-                <div class="content">
-                    <h3>Tokyo Revengers</h3>
-                    <p>Guided by the spirit demon within him, orphaned Naruto learns
-                    to harness his powers as a ninja in this anime adventure series.</p>
-                    <a href="download.html" class="btn">Download</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="box" style="background: url(img/anime-img-11.jpg) no-repeat;"></div>
-                <div class="content">
-                    <h3>Sword Art Online</h3>
-                    <p>Guided by the spirit demon within him, orphaned Naruto learns
-                    to harness his powers as a ninja in this anime adventure series.</p>
-                    <a href="download.html" class="btn">Download</a>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="box" style="background: url(img/anime-img-12.jpg) no-repeat;"></div>
-                <div class="content">
-                    <h3>KENGAN ASHURA</h3>
-                    <p>Guided by the spirit demon within him, orphaned Naruto learns
-                    to harness his powers as a ninja in this anime adventure series.</p>
-                    <a href="download.html" class="btn">Download</a>
-                </div>
-            </div>
-
 
         </div>
     </div>
@@ -237,92 +204,80 @@
 
 
                 <div class="swiper-slide">
-                    <div class="box" style="background: url(img/action-1.jpg) no-repeat;"></div>
+                    <div class="box" style="background: url(img/die.png) no-repeat;"></div>
                     <div class="content">
-                        <h3>Kuroko's Basketball</h3>
-                        <p>Guided by the spirit demon within him, orphaned Naruto learns
-                        to harness his powers as a ninja in this anime adventure series.</p>
-                        <a href="download.html" class="btn">Download</a>
+                        <h3>DIE HARD</h3>
+                        <div class="para">
+                        <p>A-classic action film featuring Bruce Willis as NYPD officer John McClane ,who battles terrorists in a Los Angeles skyscraper during a christmas party.</p></div>
+                        <a href="download.html" class="btn"><i class="bi bi-play-circle-fill"></i><pre> </pre><spam>Watch</spam></a>
                     </div>
                 </div>
 
                 <div class="swiper-slide">
-                    <div class="box" style="background: url(img/action-2.jpg) no-repeat;"></div>
+                    <div class="box" style="background: url(img/mad.png) no-repeat;"></div>
                     <div class="content">
-                        <h3>AHIRU NO SORA</h3>
-                        <p>Guided by the spirit demon within him, orphaned Naruto learns
-                        to harness his powers as a ninja in this anime adventure series.</p>
-                        <a href="download.html" class="btn">Download</a>
+                        <h3>FURY ROAD</h3>
+                        <div class="para">
+                        <p>Directed by George Miller ,this film is a high-octane post-apocalyptic adventure featuring Tom Hardy as Max Rockatansky and Charlize Theron as Imperator.</p></div>
+                        <a href="download.html" class="btn"><i class="bi bi-play-circle-fill"></i><pre> </pre><spam>Watch</spam></a>
                     </div>
                 </div>
 
                 <div class="swiper-slide">
-                    <div class="box" style="background: url(img/action-3.jpg) no-repeat;"></div>
+                    <div class="box" style="background: url(img/jhon.png) no-repeat;"></div>
                     <div class="content">
-                        <h3>Seraph of the End</h3>
-                        <p>Guided by the spirit demon within him, orphaned Naruto learns
-                        to harness his powers as a ninja in this anime adventure series.</p>
-                        <a href="download.html" class="btn">Download</a>
+                        <h3>JOHN WICK</h3>
+                        <div class="para">
+                        <p>Keanu Reeves stars as the titular character , a retired hitman seeking vengeance for the killing of his puppy , given to him by his deceased wife</p></div>
+                        <a href="download.html" class="btn"><i class="bi bi-play-circle-fill"></i><pre> </pre><spam>Watch</spam></a>
                     </div>
                 </div>
 
                 <div class="swiper-slide">
-                    <div class="box" style="background: url(img/action-4.jpg) no-repeat;"></div>
+                    <div class="box" style="background: url(img/bat.png) no-repeat;"></div>
                     <div class="content">
-                        <h3>Kuroko's  Last Game</h3>
-                        <p>Guided by the spirit demon within him, orphaned Naruto learns
-                        to harness his powers as a ninja in this anime adventure series.</p>
-                        <a href="download.html" class="btn">Download</a>
+                        <h3>THE DARK KNIGHT</h3>
+                        <div class="para">
+                        <p>While primarily a superhero film , it's packed with intense action sequences , especially the scenes involving Batman (christian Bale) and the Joker (Heath Ledger).</p></div>
+                        <a href="download.html" class="btn"><i class="bi bi-play-circle-fill"></i><pre> </pre><spam>Watch</spam></a>
                     </div>
                 </div>
 
                 <div class="swiper-slide">
-                    <div class="box" style="background: url(img/acion-5.jpg) no-repeat;"></div>
+                    <div class="box" style="background: url(img/raid.png) no-repeat;"></div>
                     <div class="content">
-                        <h3>Fate/Zero</h3>
-                        <p>Guided by the spirit demon within him, orphaned Naruto learns
-                        to harness his powers as a ninja in this anime adventure series.</p>
-                        <a href="download.html" class="btn">Download</a>
+                        <h3>THE RAID</h3>
+                        <div class="para">
+                        <p>A martial arts action film from Indonesia, it follows a SWAT team trapped in a high-rise building controlled by a rithless crime lord , leading to intense and visceral fight scenes.</p></div>
+                        <a href="download.html" class="btn"><i class="bi bi-play-circle-fill"></i><pre> </pre><spam>Watch</spam></a>
                     </div>
                 </div>
 
                 <div class="swiper-slide">
-                    <div class="box" style="background: url(img/acion-6.jpg) no-repeat;"></div>
+                    <div class="box" style="background: url(img/term.png) no-repeat;"></div>
                     <div class="content">
-                        <h3>Hellsing Ultimate</h3>
-                        <p>Guided by the spirit demon within him, orphaned Naruto learns
-                        to harness his powers as a ninja in this anime adventure series.</p>
-                        <a href="download.html" class="btn">Download</a>
+                    
+                        <h3>THE TERMINATOR</h3>
+                        <div class="para">
+                        <p>Directed by James Cameron , this sci-fi action film stars Arnold Schwarzenegger as a cyborg assassin sent back in time to kill Sarah Connor , whose unborn son will lead humanity in a war against machines.</p></div>
+                        <a href="download.html" class="btn"><i class="bi bi-play-circle-fill"></i><pre> </pre><spam>Watch</spam></a>
                     </div>
                 </div>
 
                 <div class="swiper-slide">
-                    <div class="box" style="background: url(img/action-7.jpg) no-repeat;"></div>
+                    <div class="box" style="background: url(img/mais.png) no-repeat;"></div>
                     <div class="content">
-                        <h3>DEVILS'LINE</h3>
-                        <p>Guided by the spirit demon within him, orphaned Naruto learns
-                        to harness his powers as a ninja in this anime adventure series.</p>
-                        <a href="download.html" class="btn">Download</a>
+                        <h3>THE MISSION</h3>
+                        <div class="para">
+                        <p>The sixth installment in the Mission : Impossible series , this film follows Ethan Hunt (Tom Cruise ) and his team as they race against time to prevent a global catastrophe.</p></div>
+                        <a href="download.html" class="btn"><i class="bi bi-play-circle-fill"></i><pre> </pre><spam>Watch</spam></a>
                     </div>
                 </div>
 
-                <div class="swiper-slide">
-                    <div class="box" style="background: url(img/action-8.jpg) no-repeat;"></div>
-                    <div class="content">
-                        <h3>Legend of Exorcism</h3>
-                        <p>Guided by the spirit demon within him, orphaned Naruto learns
-                        to harness his powers as a ninja in this anime adventure series.</p>
-                        <a href="download.html" class="btn">Download</a>
-                    </div>
-                </div>
-
-
-
+                
 </div>
 </div>
 </section>
-
-
 
 <section class="child" id="child">
     <h1 class="heading">Comedy Movies</h1>
@@ -333,10 +288,11 @@
                 <div class="box" style="background: url(img/cruella.png) no-repeat"></div>
                 <div class="content">
                     <h3>CRUELLA</h3>
+                    <div class="para">
                     <p>"Cruella" unleashes Emma Stone in a daring and stylish portrayal of the iconic villain, 
                         crafting a wickedly entertaining origin story against the backdrop of 1970s London's punk scene.
-                    </p>
-                    <a href="download.html" class="btn">Download</a>
+                    </p></div>
+                    <a href="download.html" class="btn"><i class="bi bi-play-circle-fill"></i><pre> </pre><spam>Watch</spam></a>
                 </div>
             </div>
 
@@ -344,9 +300,9 @@
                 <div class="box" style="background: url(img/Dontlookup.png) no-repeat"></div>
                 <div class="content">
                     <h3>Don't look UP</h3>
-                    <p>Guided by the spirit demon within him, orphaned Naruto learns
-                    to harness his powers as a ninja in this anime adventure series.</p>
-                    <a href="download.html" class="btn">Download</a>
+                    <div class="para">
+                    <p>Two astronomers discover a comet on a collision course with Earth, but their attempts to warn the public are met with disbelief and apathy in this darkly comedic satire.</p></div>
+                    <a href="download.html" class="btn"><i class="bi bi-play-circle-fill"></i><pre> </pre><spam>Watch</spam></a>
                 </div>
             </div>
 
@@ -354,9 +310,9 @@
                 <div class="box" style="background: url(img/Demolition.png) no-repeat"></div>
                 <div class="content">
                     <h3>Demolition</h3>
-                    <p>Guided by the spirit demon within him, orphaned Naruto learns
-                    to harness his powers as a ninja in this anime adventure series.</p>
-                    <a href="download.html" class="btn">Download</a>
+                    <div class="para">
+                    <p>After losing his wife in a tragic accident, a man begins to unravel emotionally and embarks on a journey of self-destruction, finding solace in destruction and rebuilding.</p></div>
+                     <a href="download.html" class="btn"><i class="bi bi-play-circle-fill"></i><pre> </pre><spam>Watch</spam></a>
                 </div>
             </div>
 
@@ -364,9 +320,9 @@
                 <div class="box" style="background: url(img/Stepbrothers.png) no-repeat"></div>
                 <div class="content">
                     <h3>Step brothers</h3>
-                    <p>Guided by the spirit demon within him, orphaned Naruto learns
-                    to harness his powers as a ninja in this anime adventure series.</p>
-                    <a href="download.html" class="btn">Download</a>
+                    <div class="para">
+                    <p>Two middle-aged men become stepbrothers when their single parents marry, leading to a hilariously dysfunctional relationship as they refuse to grow up and take responsibility.</p></div>
+                    <a href="download.html" class="btn"><i class="bi bi-play-circle-fill"></i><pre> </pre><spam>Watch</spam></a>
                 </div>
             </div>
 
@@ -374,17 +330,19 @@
                 <div class="box" style="background: url(img/backtoschool.png) no-repeat"></div>
                 <div class="content">
                     <h3>Back to school</h3>
-                    <p>"Class is in session, and Rodney Dangerfield is rewriting the rules in 'Back to School'.<br> Get ready for laughs as he turns the hallowed halls of academia into his personal playground."</p>
-                    <a href="download.html" class="btn">Download</a>
+                    <div class="para">
+                    <p>"Class is in session, and Rodney Dangerfield is rewriting the rules in 'Back to School'.<br> Get ready for laughs as he turns the hallowed halls of academia into his personal playground."</p></div>
+                    <a href="download.html" class="btn"><i class="bi bi-play-circle-fill"></i><pre> </pre><spam>Watch</spam></a>
                 </div>
             </div>
 
             <div class="swiper-slide">
-                <div class="box" style="background: url(img/freeguy.png) no-repeat"></div>
+                <div class="box" style="background: url(img/freeguy.jpg) no-repeat"></div>
                 <div class="content">
                     <h3>Free Guy</h3>
-                    <p>Enter the world of 'Free Guy' where a NPC becomes the hero of his own story. Get ready for a wild ride through<br> a virtual world filled with action, humor, and unexpected twists.</p>
-                    <a href="download.html" class="btn">Download</a>
+                    <div class="para">
+                    <p>Enter the world of 'Free Guy' where a NPC becomes the hero of his own story. Get ready for a wild ride through<br> a virtual world filled with action, humor, and unexpected twists.</p></div>
+                    <a href="download.html" class="btn"><i class="bi bi-play-circle-fill"></i><pre> </pre><spam>Watch</spam></a>
                 </div>
             </div>
 
@@ -392,17 +350,15 @@
                 <div class="box" style="background: url(img/Johnnyenglish.png) no-repeat"></div>
                 <div class="content">
                     <h3>Johnny English</h3>
-                    <p>Get ready for a spy spoof like no other. Johnny English fumbles his way through missions<br> with hilarious ineptitude, proving that even the clumsiest agent can save the day.</p>
-                    <a href="download.html" class="btn">Download</a>
+                    <div class="para">
+                    <p>Get ready for a spy spoof like no other. Johnny English fumbles his way through missions<br> with hilarious ineptitude, proving that even the clumsiest agent can save the day.</p></div>
+                    <a href="download.html" class="btn"><i class="bi bi-play-circle-fill"></i><pre> </pre><spam>Watch</spam></a>
                 </div>
             </div>
 
         </div>
     </div>
 </section>
-
-
-
 <section class="family" id="family">
     <h1 class="heading">Horror Movies</h1>
     <div class="swiper family-slider">
@@ -412,17 +368,19 @@
             <div class="box" style="background: url(img/Theconjuring.png) no-repeat"></div>
             <div class="content">
                 <h3>The Conjuring</h3>
-                <p>In the shadows of fear, evil finds its home. Brace for the chilling embrace of 'The Conjuring',<br> where every creak whispers a tale of terror.</p>
-                <a href="download.html" class="btn">Download</a>
+                <div class="para">
+                <p>In the shadows of fear, evil finds its home. Brace for the chilling embrace of 'The Conjuring',<br> where every creak whispers a tale of terror.</p></div>
+                <a href="download.html" class="btn"><i class="bi bi-play-circle-fill"></i><pre> </pre><spam>Watch</spam></a>
             </div>
         </div>
 
         <div class="swiper-slide">
-            <div class="box" style="background: url(img/Theconjuring2.png) no-repeat"></div>
+            <div class="box" style="background: url(img/conjuring.jpg) no-repeat"></div>
             <div class="content">
                 <h3>The Conjuring 2</h3>
-                <p>Evil takes many forms, but none as chilling as the true horrors witnessed by the Warrens. <br>Brace yourself for 'The Conjuring 2', where terror transcends time and space to ensnare the bravest souls</p>
-                <a href="download.html" class="btn">Download</a>
+                <div class="para">
+                <p>Evil takes many forms, but none as chilling as the true horrors witnessed by the Warrens. <br>Brace yourself for 'The Conjuring 2', where terror transcends time and space to ensnare the bravest souls</p></div>
+                <a href="download.html" class="btn"><i class="bi bi-play-circle-fill"></i><pre> </pre><spam>Watch</spam></a>
             </div>
         </div>
 
@@ -430,8 +388,9 @@
             <div class="box" style="background: url(img/Themomie.png) no-repeat"></div>
             <div class="content">
                 <h3>La Momie</h3>
-                <p>Unearth the ancient curse that awakens a malevolent force from the sands of time. <br>'The Mummy' emerges, wielding fear and chaos in its relentless quest for vengeance.</p>
-                <a href="download.html" class="btn">Download</a>
+                <div class="para">
+                <p>Unearth the ancient curse that awakens a malevolent force from the sands of time. <br>'The Mummy' emerges, wielding fear and chaos in its relentless quest for vengeance.</p></div>
+                <a href="download.html" class="btn"><i class="bi bi-play-circle-fill"></i><pre> </pre><spam>Watch</spam></a>
             </div>
         </div>
 
@@ -439,8 +398,9 @@
             <div class="box" style="background: url(img/Witch.png) no-repeat"></div>
             <div class="content">
                 <h3>The Witch</h3>
-                <p>Delve into the darkness of New England's woods, where the whispers of the unholy beckon. <br>'The Witch' weaves a sinister tale of puritanical terror, where faith crumbles and primal fears reign.</p>
-                <a href="download.html" class="btn">Download</a>
+                <div class="para">
+                <p>Delve into the darkness of New England's woods, where the whispers of the unholy beckon. <br>'The Witch' weaves a sinister tale of puritanical terror, where faith crumbles and primal fears reign.</p></div>
+                <a href="download.html" class="btn"><i class="bi bi-play-circle-fill"></i><pre> </pre><spam>Watch</spam></a>
             </div>
         </div>
 
@@ -448,8 +408,9 @@
             <div class="box" style="background: url(img/Thesilence.png) no-repeat"></div>
             <div class="content">
                 <h3>The Silence</h3>
-                <p>In the deafening void of silence, unseen horrors stir. <br> 'The Silence' unveils a world where sound is a harbinger of doom, and survival hinges on the whispered breath of fear.</p>
-                <a href="download.html" class="btn">Download</a>
+                <div class="para">
+                <p>In the deafening void of silence, unseen horrors stir. <br> 'The Silence' unveils a world where sound is a harbinger of doom, and survival hinges on the whispered breath of fear.</p></div>
+                <a href="download.html" class="btn"><i class="bi bi-play-circle-fill"></i><pre> </pre><spam>Watch</spam></a>
             </div>
         </div>
 
@@ -457,39 +418,79 @@
             <div class="box" style="background: url(img/Sinister.png) no-repeat"></div>
             <div class="content">
                 <h3>Sinister</h3>
-                <p>Enter the shadows where nightmares are born, and the echoes of evil linger. 'Sinister' unveils a chilling descent into darkness,<br> where the line between reality and nightmare blurs, and terror takes on a sinister form.</p>
-                <a href="download.html" class="btn">Download</a>
+                <div class="para">
+                <p>Enter the shadows where nightmares are born, and the echoes of evil linger. 'Sinister' unveils a chilling descent into darkness,<br> where the line between reality and nightmare blurs, and terror takes on a sinister form.</p></div>
+                <a href="download.html" class="btn"><i class="bi bi-play-circle-fill"></i><pre> </pre><spam>Watch</spam></a>
             </div>
         </div>
 
         <div class="swiper-slide">
-            <div class="box" style="background: url(img/Stayalive.png) no-repeat"></div>
+            <div class="box" style="background: url(img/Dontlookup.png) no-repeat"></div>
             <div class="content">
-                <h3>Stay Alive</h3>
-                <p>"In the deadly game of survival, every move could be your last. 'Stay Alive' plunges you into a <br>digital nightmare where virtual terror becomes all too real, and the only way out is to stay alive."</p>
-                <a href="" class="btn">Download</a>
-                <a href="download.html" class="btn">Download</a>
+                <h3>Don't look UP</h3>
+                <div class="para">
+                <p>Two astronomers discover a comet on a collision course with Earth, but their attempts to warn the public are met with disbelief and apathy in this darkly comedic satire.</p></div>
+                <a href="download.html" class="btn"><i class="bi bi-play-circle-fill"></i><pre> </pre><spam>Watch</spam></a>
             </div>
         </div>
-
-       
-
-
     </div>
-    </div>
+</div>
 </section>
 
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>StreamifyX</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">terms of Use</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Media Center</a></li>
+                    <li><a href="#">Ways to Watch</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Legal Notices</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact us</h4>
+                <ul>
+                    <li><a href="#">Speed Test</a></li>
+                    <li><a href="#">Email</a></li>
+                    <li><a href="#">Fax:  05 36 14 55 89</a></li>
+                    <li><a href="#">Phone:  05 33 14 55 87</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
-<div class="copyright container">
-    <a href="#" class="logo"><i class="fas fa-infinity"></i>StreamifyX</a>
-    <p>&#169; Latia El Guerouani. All rights reserved.</p>
-</div>
 
 
- <script type="litespeed/javascript" data-src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
- <script type="litespeed/javascript" data-src="main.js"></script>
- <script data-no-optimize="1">!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?module.exports=e():"function"==typeof define&&define.amd?define(e):(t="undefined"!=typeof globalThis?globalThis:t||self).LazyLoad=e()}(this,function(){"use strict";function e(){return(e=Object.assign||function(t){for(var e=1;e<arguments.length;e++){var n,a=arguments[e];for(n in a)Object.prototype.hasOwnProperty.call(a,n)&&(t[n]=a[n])}return t}).apply(this,arguments)}function i(t){return e({},it,t)}function o(t,e){var n,a="LazyLoad::Initialized",i=new t(e);try{n=new CustomEvent(a,{detail:{instance:i}})}catch(t){(n=document.createEvent("CustomEvent")).initCustomEvent(a,!1,!1,{instance:i})}window.dispatchEvent(n)}function l(t,e){return t.getAttribute(gt+e)}function c(t){return l(t,bt)}function s(t,e){return function(t,e,n){e=gt+e;null!==n?t.setAttribute(e,n):t.removeAttribute(e)}(t,bt,e)}function r(t){return s(t,null),0}function u(t){return null===c(t)}function d(t){return c(t)===vt}function f(t,e,n,a){t&&(void 0===a?void 0===n?t(e):t(e,n):t(e,n,a))}function _(t,e){nt?t.classList.add(e):t.className+=(t.className?" ":"")+e}function v(t,e){nt?t.classList.remove(e):t.className=t.className.replace(new RegExp("(^|\\s+)"+e+"(\\s+|$)")," ").replace(/^\s+/,"").replace(/\s+$/,"")}function g(t){return t.llTempImage}function b(t,e){!e||(e=e._observer)&&e.unobserve(t)}function p(t,e){t&&(t.loadingCount+=e)}function h(t,e){t&&(t.toLoadCount=e)}function n(t){for(var e,n=[],a=0;e=t.children[a];a+=1)"SOURCE"===e.tagName&&n.push(e);return n}function m(t,e){(t=t.parentNode)&&"PICTURE"===t.tagName&&n(t).forEach(e)}function a(t,e){n(t).forEach(e)}function E(t){return!!t[st]}function I(t){return t[st]}function y(t){return delete t[st]}function A(e,t){var n;E(e)||(n={},t.forEach(function(t){n[t]=e.getAttribute(t)}),e[st]=n)}function k(a,t){var i;E(a)&&(i=I(a),t.forEach(function(t){var e,n;e=a,(t=i[n=t])?e.setAttribute(n,t):e.removeAttribute(n)}))}function L(t,e,n){_(t,e.class_loading),s(t,ut),n&&(p(n,1),f(e.callback_loading,t,n))}function w(t,e,n){n&&t.setAttribute(e,n)}function x(t,e){w(t,ct,l(t,e.data_sizes)),w(t,rt,l(t,e.data_srcset)),w(t,ot,l(t,e.data_src))}function O(t,e,n){var a=l(t,e.data_bg_multi),i=l(t,e.data_bg_multi_hidpi);(a=at&&i?i:a)&&(t.style.backgroundImage=a,n=n,_(t=t,(e=e).class_applied),s(t,ft),n&&(e.unobserve_completed&&b(t,e),f(e.callback_applied,t,n)))}function N(t,e){!e||0<e.loadingCount||0<e.toLoadCount||f(t.callback_finish,e)}function C(t,e,n){t.addEventListener(e,n),t.llEvLisnrs[e]=n}function M(t){return!!t.llEvLisnrs}function z(t){if(M(t)){var e,n,a=t.llEvLisnrs;for(e in a){var i=a[e];n=e,i=i,t.removeEventListener(n,i)}delete t.llEvLisnrs}}function R(t,e,n){var a;delete t.llTempImage,p(n,-1),(a=n)&&--a.toLoadCount,v(t,e.class_loading),e.unobserve_completed&&b(t,n)}function T(o,r,c){var l=g(o)||o;M(l)||function(t,e,n){M(t)||(t.llEvLisnrs={});var a="VIDEO"===t.tagName?"loadeddata":"load";C(t,a,e),C(t,"error",n)}(l,function(t){var e,n,a,i;n=r,a=c,i=d(e=o),R(e,n,a),_(e,n.class_loaded),s(e,dt),f(n.callback_loaded,e,a),i||N(n,a),z(l)},function(t){var e,n,a,i;n=r,a=c,i=d(e=o),R(e,n,a),_(e,n.class_error),s(e,_t),f(n.callback_error,e,a),i||N(n,a),z(l)})}function G(t,e,n){var a,i,o,r,c;t.llTempImage=document.createElement("IMG"),T(t,e,n),E(c=t)||(c[st]={backgroundImage:c.style.backgroundImage}),o=n,r=l(a=t,(i=e).data_bg),c=l(a,i.data_bg_hidpi),(r=at&&c?c:r)&&(a.style.backgroundImage='url("'.concat(r,'")'),g(a).setAttribute(ot,r),L(a,i,o)),O(t,e,n)}function D(t,e,n){var a;T(t,e,n),a=e,e=n,(t=It[(n=t).tagName])&&(t(n,a),L(n,a,e))}function V(t,e,n){var a;a=t,(-1<yt.indexOf(a.tagName)?D:G)(t,e,n)}function F(t,e,n){var a;t.setAttribute("loading","lazy"),T(t,e,n),a=e,(e=It[(n=t).tagName])&&e(n,a),s(t,vt)}function j(t){t.removeAttribute(ot),t.removeAttribute(rt),t.removeAttribute(ct)}function P(t){m(t,function(t){k(t,Et)}),k(t,Et)}function S(t){var e;(e=At[t.tagName])?e(t):E(e=t)&&(t=I(e),e.style.backgroundImage=t.backgroundImage)}function U(t,e){var n;S(t),n=e,u(e=t)||d(e)||(v(e,n.class_entered),v(e,n.class_exited),v(e,n.class_applied),v(e,n.class_loading),v(e,n.class_loaded),v(e,n.class_error)),r(t),y(t)}function $(t,e,n,a){var i;n.cancel_on_exit&&(c(t)!==ut||"IMG"===t.tagName&&(z(t),m(i=t,function(t){j(t)}),j(i),P(t),v(t,n.class_loading),p(a,-1),r(t),f(n.callback_cancel,t,e,a)))}function q(t,e,n,a){var i,o,r=(o=t,0<=pt.indexOf(c(o)));s(t,"entered"),_(t,n.class_entered),v(t,n.class_exited),i=t,o=a,n.unobserve_entered&&b(i,o),f(n.callback_enter,t,e,a),r||V(t,n,a)}function H(t){return t.use_native&&"loading"in HTMLImageElement.prototype}function B(t,i,o){t.forEach(function(t){return(a=t).isIntersecting||0<a.intersectionRatio?q(t.target,t,i,o):(e=t.target,n=t,a=i,t=o,void(u(e)||(_(e,a.class_exited),$(e,n,a,t),f(a.callback_exit,e,n,t))));var e,n,a})}function J(e,n){var t;et&&!H(e)&&(n._observer=new IntersectionObserver(function(t){B(t,e,n)},{root:(t=e).container===document?null:t.container,rootMargin:t.thresholds||t.threshold+"px"}))}function K(t){return Array.prototype.slice.call(t)}function Q(t){return t.container.querySelectorAll(t.elements_selector)}function W(t){return c(t)===_t}function X(t,e){return e=t||Q(e),K(e).filter(u)}function Y(e,t){var n;(n=Q(e),K(n).filter(W)).forEach(function(t){v(t,e.class_error),r(t)}),t.update()}function t(t,e){var n,a,t=i(t);this._settings=t,this.loadingCount=0,J(t,this),n=t,a=this,Z&&window.addEventListener("online",function(){Y(n,a)}),this.update(e)}var Z="undefined"!=typeof window,tt=Z&&!("onscroll"in window)||"undefined"!=typeof navigator&&/(gle|ing|ro)bot|crawl|spider/i.test(navigator.userAgent),et=Z&&"IntersectionObserver"in window,nt=Z&&"classList"in document.createElement("p"),at=Z&&1<window.devicePixelRatio,it={elements_selector:".lazy",container:tt||Z?document:null,threshold:300,thresholds:null,data_src:"src",data_srcset:"srcset",data_sizes:"sizes",data_bg:"bg",data_bg_hidpi:"bg-hidpi",data_bg_multi:"bg-multi",data_bg_multi_hidpi:"bg-multi-hidpi",data_poster:"poster",class_applied:"applied",class_loading:"litespeed-loading",class_loaded:"litespeed-loaded",class_error:"error",class_entered:"entered",class_exited:"exited",unobserve_completed:!0,unobserve_entered:!1,cancel_on_exit:!0,callback_enter:null,callback_exit:null,callback_applied:null,callback_loading:null,callback_loaded:null,callback_error:null,callback_finish:null,callback_cancel:null,use_native:!1},ot="src",rt="srcset",ct="sizes",lt="poster",st="llOriginalAttrs",ut="loading",dt="loaded",ft="applied",_t="error",vt="native",gt="data-",bt="ll-status",pt=[ut,dt,ft,_t],ht=[ot],mt=[ot,lt],Et=[ot,rt,ct],It={IMG:function(t,e){m(t,function(t){A(t,Et),x(t,e)}),A(t,Et),x(t,e)},IFRAME:function(t,e){A(t,ht),w(t,ot,l(t,e.data_src))},VIDEO:function(t,e){a(t,function(t){A(t,ht),w(t,ot,l(t,e.data_src))}),A(t,mt),w(t,lt,l(t,e.data_poster)),w(t,ot,l(t,e.data_src)),t.load()}},yt=["IMG","IFRAME","VIDEO"],At={IMG:P,IFRAME:function(t){k(t,ht)},VIDEO:function(t){a(t,function(t){k(t,ht)}),k(t,mt),t.load()}},kt=["IMG","IFRAME","VIDEO"];return t.prototype={update:function(t){var e,n,a,i=this._settings,o=X(t,i);{if(h(this,o.length),!tt&&et)return H(i)?(e=i,n=this,o.forEach(function(t){-1!==kt.indexOf(t.tagName)&&F(t,e,n)}),void h(n,0)):(t=this._observer,i=o,t.disconnect(),a=t,void i.forEach(function(t){a.observe(t)}));this.loadAll(o)}},destroy:function(){this._observer&&this._observer.disconnect(),Q(this._settings).forEach(function(t){y(t)}),delete this._observer,delete this._settings,delete this.loadingCount,delete this.toLoadCount},loadAll:function(t){var e=this,n=this._settings;X(t,n).forEach(function(t){b(t,e),V(t,n,e)})},restoreAll:function(){var e=this._settings;Q(e).forEach(function(t){U(t,e)})}},t.load=function(t,e){e=i(e);V(t,e)},t.resetStatus=function(t){r(t)},Z&&function(t,e){if(e)if(e.length)for(var n,a=0;n=e[a];a+=1)o(t,n);else o(t,e)}(t,window.lazyLoadOptions),t});!function(e,t){"use strict";function a(){t.body.classList.add("litespeed_lazyloaded")}function n(){console.log("[LiteSpeed] Start Lazy Load Images"),d=new LazyLoad({elements_selector:"[data-lazyloaded]",callback_finish:a}),o=function(){d.update()},e.MutationObserver&&new MutationObserver(o).observe(t.documentElement,{childList:!0,subtree:!0,attributes:!0})}var d,o;e.addEventListener?e.addEventListener("load",n,!1):e.attachEvent("onload",n)}(window,document);</script><script data-no-optimize="1">var litespeed_vary=document.cookie.replace(/(?:(?:^|.*;\s*)_lscache_vary\s*\=\s*([^;]*).*$)|^.*$/,"");litespeed_vary||fetch("/wp-content/plugins/litespeed-cache/guest.vary.php",{method:"POST",cache:"no-cache",redirect:"follow"}).then(e=>e.json()).then(e=>{console.log(e),e.hasOwnProperty("reload")&&"yes"==e.reload&&(sessionStorage.setItem("litespeed_docref",document.referrer),window.location.reload(!0))});</script><script data-optimized="1" type="litespeed/javascript" data-src="https://dailywebdesigns.com/wp-content/litespeed/js/1b3f96ee2c4d7c42a4b314914800caf2.js?ver=141a3"></script>
-</body>
 
-</html>
 
+
+
+
+
+
+
+ 
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" defer data-deferred="1"></script>  <script src="main.js" defer data-deferred="1"></script> </body>
+                                                                                                                                                                                    </html>
